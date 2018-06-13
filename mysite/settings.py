@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 SECRET_KEY = 'w1rdr5=&)i++&4&!t&ybv0%7wkx_nt^-4^1y_5dhalm!xmk=@d'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'django-girls-blog.glitch.me']
 
@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-#STATIC_ROOT = '/app/static_resources/'
+STATIC_ROOT = '/blog/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
